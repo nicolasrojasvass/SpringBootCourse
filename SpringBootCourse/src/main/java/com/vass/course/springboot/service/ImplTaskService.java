@@ -2,11 +2,13 @@ package com.vass.course.springboot.service;
 
 import com.vass.course.springboot.data.Task;
 import com.vass.course.springboot.data.User;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+@Service
 public class ImplTaskService implements TaskService{
 
     private final HashMap<String, Task> tasksHashMap = new HashMap<>();
